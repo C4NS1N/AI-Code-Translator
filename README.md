@@ -8,23 +8,23 @@ AI Code Translator is a tool that allows users to translate code from one langua
 
 - **Language Translation:** Translate code from one programming language to another.
 - **Supported Languages:** Currently supports translation between languages:
-  > Assembly Language
-  > Bash
-  > C
-  > C#
-  > C++
-  > Go
-  > Java
-  > JavaScript
-  > Lua
-  > Powershell
-  > Python
-  > Ruby
-  > Rust
-  > TSX
-  > TypeScript
-  > Visual Basic .NET
-  > Vue
+  Assembly Language
+  Bash
+  C
+  C#
+  C++
+  Go
+  Java
+  JavaScript
+  Lua
+  Powershell
+  Python
+  Ruby
+  Rust
+  TSX
+  TypeScript
+  Visual Basic .NET
+  Vue
 
 ## Getting Started
 
