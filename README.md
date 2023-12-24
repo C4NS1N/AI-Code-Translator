@@ -28,10 +28,10 @@ AI Code Translator is a tool that allows users to translate code from one langua
 
 ## Getting Started
 
-### Prerequisites
+### Requirements
 
 - Python 3.x installed on your machine.
-- Additional dependencies in requirements.txt.
+- Additional dependencies in requirements.txt (python librarys).
 
 ### Installation
 
