@@ -50,8 +50,9 @@ python3 app.py
 ```
 
 **Windows**
-\ndownload project and extract it on folder
-after:
+
+- Download the project and extract it to a folder, then follow the instructions
+
 ```bash
 cd path/to/AI-Code-Translator
 ```
