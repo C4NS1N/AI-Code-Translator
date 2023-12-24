@@ -38,15 +38,26 @@ AI Code Translator is a tool that allows users to translate code from one langua
 **Linux**
 ```bash
 git clone https://github.com/C4NS1N/AI-Code-Translator.git
+```
+```bash
 cd AI-Code-Translator
+```
+```bash
 pip3 install requirements.txt
+```
+```bash
 python3 app.py
 ```
+
 **Windows**
 download project and extract it on folder
 after:
 ```bash
 cd path/to/AI-Code-Translator
+```
+```bash
 pip3 install requirements.txt
+```
+```bash
 python3 app.py
 ```
