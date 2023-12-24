@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Translator</title>
+    <link rel="stylesheet" href="customs/style.css" />
+  </head>
+  <body>
+    <div class="translator-container">
+      <header>
+        <h1>Code Translator</h1>
+      </header>
+      <form action="/translate" method="post">
+        <select
+          id="language_list"
+          name="source_language"
+          class="language_list"
+          autofocus
+        >
+          <option value="Assembly Language">Assembly Language</option>
+          <option value="Bash">Bash</option>
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="C++">C++</option>
+          <option value="Go">Go</option>
+          <option value="Java">Java</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Lua">Lua</option>
+          <option value="Powershell">Powershell</option>
+          <option value="Python">Python</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Rust">Rust</option>
+          <option value="TSX">TSX</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="Visual Basic .NET">Visual Basic .NET</option>
+          <option value="Vue">Vue</option>
+        </select>
+        <section class="translation-form">
+          <label for="input_code">Input Code:</label>
+          <textarea name="input_code" rows="10" required>
+{{ input_code }}</textarea
+          >
+        </section>
+        <button type="submit">Translate</button>
+        <select
+          id="language_list2"
+          name="target_language"
+          class="language_list"
+        >
+          <option value="Assembly Language">Assembly Language</option>
+          <option value="Bash">Bash</option>
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="C++">C++</option>
+          <option value="Go">Go</option>
+          <option value="Java">Java</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Lua">Lua</option>
+          <option value="Powershell">Powershell</option>
+          <option value="Python">Python</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Rust">Rust</option>
+          <option value="TSX">TSX</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="Visual Basic .NET">Visual Basic .NET</option>
+          <option value="Vue">Vue</option>
+        </select>
+      </form>
+
+      <section class="translation-result">
+        <label for="result-text">Result:</label>
+        <textarea name="output_code" rows="10" readonly>
+{{ translated_code }}</textarea
+        >
+      </section>
+    </div>
+
+    <script>
+      // Get the last selected value from localStorage
+      let lastSelectedValue = localStorage.getItem("lastSelectedValue");
+
+      // Set the last selected value if it exists
+      if (lastSelectedValue) {
+        document.getElementById("language_list").value = lastSelectedValue;
+      }
+
+      // Function to handle the change event
+      function handleSelectChange() {
+        // Get the selected value
+        const selectedValue = document.getElementById("language_list").value;
+
+        // Update the last selected value in localStorage
+        localStorage.setItem("lastSelectedValue", selectedValue);
+      }
+
+      // Attach the event listener to the select element
+      document
+        .getElementById("language_list")
+        .addEventListener("change", handleSelectChange);
+
+      // ----------------------------------------------------------
+
+      // Get the last selected value from localStorage
+      let lastSelectedValue2 = localStorage.getItem("lastSelectedValue2");
+
+      // Set the last selected value if it exists
+      if (lastSelectedValue2) {
+        document.getElementById("language_list2").value = lastSelectedValue2;
+      }
+
+      // Function to handle the change event
+      function handleSelectChange2() {
+        // Get the selected value
+        const selectedValue2 = document.getElementById("language_list2").value;
+
+        // Update the last selected value in localStorage
+        localStorage.setItem("lastSelectedValue2", selectedValue2);
+      }
+
+      // Attach the event listener to the select element
+      document
+        .getElementById("language_list2")
+        .addEventListener("change", handleSelectChange2);
+    </script>
+  </body>
+</html>

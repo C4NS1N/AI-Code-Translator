@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #161b22;
+}
+
+.translator-container {
+  background-color: #0d1117;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #6fbcff;
+}
+
+.translation-form label,
+.translation-result label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ecf2f8;
+}
+
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #21262d;
+  border-radius: 4px;
+  background-color: #21262d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ecf2f8;
+}
+
+button {
+  background-color: #5a9cd4;
+  color: #ecf2f8;
+  border: 1px solid #5a9cd4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #80abd1;
+  border-color: #80abd1;
+}
+
+.translation-result textarea,
+.translation-form textarea {
+  resize: none;
+  background-color: #21262d;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+}
